@@ -63,28 +63,5 @@ if __name__ == "__main__":
 
     la_boite = 5
     print(f"Taille de la boite {la_boite} : {a.afficherNbElement(a.boite[la_boite-1])}")
-    import time
-
-    from crontab import CronTab
-
-    """
-    %d jour (01 à 31)
-    %m mois (01 à 12)
-    %Y année (ex : 2021)
-    %H heure
-    %I minute
-    %S seconde
-    %p AM/PM
-    %A jour semaine / %a (jour abrégé)
-    %B mois / %b (abrégé)
-
-    %Z fuseau horaire (timezone)
-    """
-    m = time.strftime("%A")
-    mon_temps = time.strftime("%p")
-    if mon_temps == "AM":
-        print("On est le matin")
-    else: 
-        print("On est l'après-midi")
 
     
